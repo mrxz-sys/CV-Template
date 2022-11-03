@@ -9,8 +9,8 @@ fileInp.click();
       if (file) {
         blah.src = URL.createObjectURL(file)
         blah.style.position="absolute";
-        blah.style.top="120px";
-        blah.style.right="160px";
+        blah.style.top="80px";
+        blah.style.right="350px";
         blah.style.width="200px";
         blah.style.height="200px";
         blah.style.borderRadius ="50%";
