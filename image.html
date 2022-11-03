@@ -1,67 +1,30 @@
-<style>
-  body {
-  background: #bfbfbf;
-}
-.photo-upload {
-  height: auto;
-  margin: 20px 0;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-.input-file {
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  width: 0.1px;
-  z-index: -1;
-}
-.input-file:focus + label {
-  border-color: #0070d3;
-}
-.input-file + label {
-  background: transparent;
-  border: 2px solid #bc0087;
-  border-radius: 50%;
-  color: #5b5b5b;
-  display: inline-block;
-  font-size: 12pt;
-  font-weight: 500;
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  width: 200px;
-}
-.input-file + label:hover,
-.input-file + label:focus {
-  border-color: #0070d3;
-  cursor: pointer;
-}
-.image-preview {
-  border-radius: 50%;
-  height: 200px;
-  left: -4px;
-  margin: 0 auto;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 200px;
-}
-.image-preview__img {
-  border: 2px solid #bc0087;
-  border-radius: 50%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: 200px;
-}
-
-</style>
-<script src="script.js"></script>
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="styler.css">
+<title>eaze</title>
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+<meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+</head>
+<center>
 <body>
-    <div id="app"></div>
+<form method="POST">
+  <br><br><br><br>
+<!--<div class="custom-file">
+  <img src="border1.png" alt="fency border">
+    <input type="file" class="custom-file-input image-gallery" id="image-gallery" name="image-gallery[]"  accept="image/*" onchange="chng()">
+</div>-->
+<div class="container">
+<<input accept="image/*" type='file' id="imgInp" class="hidden">
+<div class="tag">Upload your image !</div>
+ <!--<img src="blue.png" alt="" class="inner-image"/>-->
+ <img id="blah" src="#"  />
+<img class="img1" src="border1.png" id="outer_image" src="" alt="fency border">
+</div>
+<a class="linear-wipe" href="https://www.etsy.com/shop/DigitalMarketTresors">Digital Market Tresors</a>
+<script src="Image resizer.js">
+</script>
+</form>
 </body>
+</center>
+</html>
