@@ -1,0 +1,65 @@
+body {
+  background-image: url("nature background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 { color: #d54d7b;
+   font-family: "Great Vibes", cursive;
+   font-size: 50px;
+   line-height: 160px;
+   font-weight: normal;
+   margin-bottom: 0px;
+   margin-top: 40px;
+   text-align: center;
+   text-shadow: 0 1px 1px #fff;
+  }
+
+.linear-wipe {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight:  100;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+    .container {
+      border: 1px solid transparent;
+      width: 900px;
+      height: 642px;
+      position: relative;
+      }
+    .tag {
+      left: 0px;
+      top: 0px;
+      z-index: 1000;
+      margin-bottom: -20px;
+      color: snow;
+      font-family: "Great Vibes", cursive;
+      font-weight: normal;
+      font-size: 50px;
+      text-align: center;
+      text-shadow: 0 1px 1px #fff;
+      }
+      input[type="file"] {
+  display: none;
+}
+    .img1{
+      cursor:pointer;
+      border-radius: 20%;
+      
+    }
