@@ -1,30 +1,47 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" href="styler.css">
-<title>eaze</title>
-<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-<meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+<style>
+      input[type="file"] {
+  display: none;
+}
+    .img1{
+      cursor:pointer;
+      opacity: 20%;
+      border-radius: 50%;
+      border : 5px solid black;
+      width: 200px;
+      height:200px;
+      align-top:80px;
+      align-right:350px;
+    }
+
+</style>
 </head>
-<center>
 <body>
-<form method="POST">
-  <br><br><br><br>
-<!--<div class="custom-file">
-  <img src="border1.png" alt="fency border">
-    <input type="file" class="custom-file-input image-gallery" id="image-gallery" name="image-gallery[]"  accept="image/*" onchange="chng()">
-</div>-->
-<div class="container">
-<<input accept="image/*" type='file' id="imgInp" class="hidden">
-<div class="tag">Upload your image !</div>
- <!--<img src="blue.png" alt="" class="inner-image"/>-->
+<input accept="image/*" type='file' id="imgInp" class="hidden">
  <img id="blah"   />
-<img class="img1" src="border1.png" id="outer_image" src="" alt="fency border">
-</div>
-<a class="linear-wipe" href="https://www.etsy.com/shop/DigitalMarketTresors">Digital Market Tresors</a>
-<script src="Image resizer.js">
+<div class="img1"  id="outer_image" ></div>
+<script>
+var imgBtn = document.getElementById("outer_image")
+var fileInp = document.querySelector('[type="file"]');
+imgBtn.addEventListener('click', function() {
+fileInp.click();
+})
+
+    imgInp.onchange = evt => {
+      const [file] = imgInp.files
+      if (file) {
+        blah.src = URL.createObjectURL(file)
+        blah.style.position="absolute";
+        blah.style.top="80px";
+        blah.style.right="350px";
+        blah.style.width="200px";
+        blah.style.height="200px";
+        blah.style.borderRadius ="50%";
+      }
+    }
+
 </script>
-</form>
 </body>
-</center>
 </html>
