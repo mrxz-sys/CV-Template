@@ -1,3 +1,70 @@
+<style>
+    $gray = #bfbfbf
+$dark-gray = #5b5b5b
+$pink = #bc0087
+$dark-pink = #96006B
+$blue = #0084fa
+$dark-blue = #0070d3
+
+body
+	background $gray
+  
+.photo-upload
+		height auto
+		margin 20px 0
+		position relative
+		text-align center
+		width 100%
+
+	.input-file
+		height 0.1px
+		opacity 0
+		overflow hidden
+		position absolute
+		width 0.1px
+		z-index -1
+
+		&:focus + label
+			border-color $dark-blue			
+
+		& + label
+			background transparent
+			border 2px solid $pink
+			border-radius 50%
+			color $dark-gray
+			display inline-block
+			font-size 12pt
+			font-weight 500
+			height 200px
+			line-height 200px
+			text-align center
+			width 200px
+
+			&:hover,
+			&:focus
+				border-color $dark-blue
+				cursor pointer
+
+	.image-preview		
+		border-radius 50%
+		height 200px
+		left -4px
+		margin 0 auto
+		pointer-events none
+		position absolute
+		right 0
+		top 0
+		width 200px
+
+		&__img
+			border 2px solid $pink
+			border-radius 50%
+			height 200px
+			object-fit cover
+			object-position center
+			width 200px
+</style>
+<script src="script.js"></script>
 <body>
     <div id="app"></div>
 </body>
