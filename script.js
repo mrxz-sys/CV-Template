@@ -1,6 +1,6 @@
 new Vue({
-    el: '#app',
-    template: `
+  el: '#app',
+  template: `
         	 <div class="photo-upload">
 		<div class="file-upload-form">
 			<input
@@ -24,21 +24,19 @@ new Vue({
 		</div>
 	</div>
     `,
-    	data: function returnImageData() {
-		return {
-			imageData: '',
-		};
-	},
-	methods: {
-		previewThumbnail: function getPreview(event) {
-			const input = event.target;
-			if (input.files && input.files[0]) {
-				const reader = new FileReader();
-				reader.onload = (e) => {
-					this.imageData = e.target.result;
-				};
-				reader.readAsDataURL(input.files[0]);
-			}
-		},
-	},
-});
+  data: function returnImageData() {
+    return {
+      imageData: '' };
+
+  },
+  methods: {
+    previewThumbnail: function getPreview(event) {
+      const input = event.target;
+      if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = e => {
+          this.imageData = e.target.result;
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    } } });
